@@ -33,7 +33,7 @@ body{
   margin: auto;
 }
 
-/*picture row arangement and zizing*/
+/*image row arangement and sizing*/
 #topRow{
   width: 100%;
   height: 49%;
@@ -52,7 +52,7 @@ body{
   margin-left: auto;
 }
 
-/*individual picture zizing*/
+/*individual image sizing*/
 #pic1{
   height: 99%;
   width: 32.33%;
