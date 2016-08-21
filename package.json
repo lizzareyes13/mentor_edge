@@ -1,0 +1,16 @@
+{
+  "name": "mentorEdge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "reload -b"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reload": "^1.0.1",
+    "start": "^4.0.1"
+  }
+}
