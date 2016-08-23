@@ -6,9 +6,9 @@ head{
 
 /*body styling*/
 body{
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   height: 80%;
   width: 100%;
@@ -52,74 +52,145 @@ body{
   margin-left: auto;
 }
 
-/*individual image sizing*/
+/*individual image styling*/
 #pic1{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/presentation.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: left;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
-  div {
-    box-shadow: 10px 10px 10px #888888;
 }
+#pic1:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/presentation.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
 }
 
 #pic2{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/interview.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: left;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
+}
+#pic2:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/interview.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
 }
 
 #pic3{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/lab_guy.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: left;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
+}
+#pic3:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/lab_guy.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
 }
 
 #pic4{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/showing_paperwork.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: right;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
+}
+#pic4:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/showing_paperwork.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
 }
 
 #pic5{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/medical_board.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: right;
-  margin-top: .5%;
-  margin-right: .5%;
-  margin-bottom: .5%;
-  margin-left: .5%;
+}
+#pic5:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/medical_board.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
 }
 
 #pic6{
-  height: 99%;
-  width: 32.33%;
+  background-image: url("../img/showing_plan.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   float: right;
+}
+#pic6:hover {
+  background: linear-gradient(LightSlateGrey, transparent),
+              url("../img/showing_plan.jpeg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+}
+
+/* image card styling*/
+.cards{
+  height: 97%;
+  width: 30.33%;
   margin-top: .5%;
   margin-right: .5%;
   margin-bottom: .5%;
   margin-left: .5%;
+  padding: 1%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 DarkSlateGrey, 0 6px 20px 0 DarkSlateGrey;
 }
 
-img{
-  height: 100%;
-  width: 100%;
+/*quote styling*/
+.cards p{
+  visibility: hidden;
+  font-family: arial;
+  font-size: 14px;
+  color: WhiteSmoke;
+  text-shadow: 0 0 3px DimGrey;
+  text-align: center;
+  position: relative;
+  z-index: 1;
 }
+
+.cards h2{
+    visibility: visible;
+    font-family: arial;
+    font-weight: bold;
+    color: WhiteSmoke;
+    text-shadow: 0 0 3px DimGrey;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(to right, transparent, LightSlateGrey , transparent); 
+}
+
+/*hyperlink styling*/
+a:hover h2{
+  visibility: hidden;
+}
+
+a:hover p{
+  visibility: visible;
+}
+
 
 /*footer styling*/
 footer{
@@ -130,8 +201,8 @@ footer{
 /*copyright styling*/
 #copyright{
   width: 79%;
-  height: 79%;
-  margin-top: 20%;
+  height: 95%;
+  margin-top: 5%;
   margin-right: auto;
   margin-bottom: 1%;
   margin-left: auto;
