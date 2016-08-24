@@ -1,22 +1,19 @@
-/*head stytling*/
-head{
-  height: 14%;
+/*header stytling*/
+header{
   width: 100%;
 }
 
 /*body styling*/
 body{
+  background: linear-gradient(AliceBlue, #0e1e3d);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 80%;
-  width: 100%;
 }
 
 /*title styling*/
 #title{
-  border: 2px solid black;
   width: 50%;
   height: 100%;
   margin-top: 1%;
@@ -26,10 +23,30 @@ body{
   text-align: center;
 }
 
+#title img{
+  height: 30%;
+  width: 30%;
+  margin: auto;
+}
+
+/*top blurb styling*/
+.topBlurb{
+  width: 80%;
+  margin: auto;
+  font-family: abel;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: WhiteSmoke;
+  text-shadow: 0 0 3px DimGrey;
+  text-align: center;
+  border-top: 2px solid #0e1e3d;
+  border-bottom: 2px solid #0e1e3d;
+}
+
 /*table sizing*/
 .pictureTable{
   width: 80%;
-  height: 60%;
   margin: auto;
 }
 
@@ -61,7 +78,7 @@ body{
   float: left;
 }
 #pic1:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/presentation.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -76,7 +93,7 @@ body{
   float: left;
 }
 #pic2:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/interview.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -91,7 +108,7 @@ body{
   float: left;
 }
 #pic3:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/lab_guy.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -106,7 +123,7 @@ body{
   float: right;
 }
 #pic4:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/showing_paperwork.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -121,7 +138,7 @@ body{
   float: right;
 }
 #pic5:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/medical_board.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -136,7 +153,7 @@ body{
   float: right;
 }
 #pic6:hover {
-  background: linear-gradient(LightSlateGrey, transparent),
+  background: linear-gradient(#0e1e3d, transparent),
               url("../img/showing_plan.jpeg");
               background-size: cover;
               background-repeat: no-repeat;
@@ -158,20 +175,23 @@ body{
 
 /*quote styling*/
 .cards p{
-  visibility: hidden;
-  font-family: arial;
-  font-size: 14px;
+  opacity: 0;
+  font-family: abel;
+  font-size: 22px;
   color: WhiteSmoke;
   text-shadow: 0 0 3px DimGrey;
   text-align: center;
   position: relative;
   z-index: 1;
+  transition: all, 1.5s;
 }
 
-.cards h2{
-    visibility: visible;
-    font-family: arial;
+.cards h3{
+    opacity: 1;
+    font-family: abel;
+    font-size: 26px;
     font-weight: bold;
+    letter-spacing: 2px;
     color: WhiteSmoke;
     text-shadow: 0 0 3px DimGrey;
     text-align: center;
@@ -179,16 +199,17 @@ body{
     margin: auto;
     position: relative;
     z-index: 2;
-    background: linear-gradient(to right, transparent, LightSlateGrey , transparent); 
+    transition: all, 1.3s;
+    background: linear-gradient(to right, transparent, #0e1e3d , transparent);
 }
 
 /*hyperlink styling*/
-a:hover h2{
-  visibility: hidden;
+a:hover h3{
+  opacity: 0;
 }
 
 a:hover p{
-  visibility: visible;
+  opacity: 1;
 }
 
 
@@ -201,7 +222,6 @@ footer{
 /*copyright styling*/
 #copyright{
   width: 79%;
-  height: 95%;
   margin-top: 5%;
   margin-right: auto;
   margin-bottom: 1%;
@@ -209,9 +229,13 @@ footer{
   text-align: right;
 }
 
-#copyright p{
-  height: 100%
-  margin-top: auto;
-  margin-bottom:auto;
-  font-family: arial;
+#copyright span{
+  font-family: abel;
+  font-weight: lighter;
+}
+
+.pictureTable::after{
+  content:"";
+  display:block;
+  clear:both;
 }
