@@ -231,11 +231,168 @@ footer{
 
 #copyright span{
   font-family: abel;
+  font-size: 20px;
   font-weight: lighter;
 }
 
+/*clear float*/
 .pictureTable::after{
   content:"";
   display:block;
   clear:both;
+}
+
+/*mobile screen css*/
+@media only screen and (max-width: 800px) {
+  body{
+    margin:0;
+  }
+  /*logo styling*/
+  #title{
+    width: 100%;
+    height: auto;
+  }
+  #title img{
+    width: 50%;
+    display:block;
+    margin: 0 auto;
+  }
+
+  /*blurb styling*/
+  .blurb{
+    width:95%;
+  }
+
+  /*align images vertically*/
+  #pic1, #pic2, #pic3, #pic4, #pic5, #pic6{
+    width: 95%;
+    margin-top: 1%;
+    margin-right: 2.5%;
+    margin-bottom: 1%;
+    margin-left: 2.5%;
+  }
+
+  /*individual image styling*/
+  #pic1{
+    background-image: url("../img/presentation.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  #pic1:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/presentation.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  #pic2{
+    background-image: url("../img/interview.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  #pic2:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/interview.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  #pic3{
+    background-image: url("../img/lab_guy.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+    #pic3:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/lab_guy.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  #pic4{
+    background-image: url("../img/showing_paperwork.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  #pic4:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/showing_paperwork.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  #pic5{
+    background-image: url("../img/medical_board.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  #pic5:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/medical_board.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  #pic6{
+    background-image: url("../img/showing_plan.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    float: left;
+  }
+  #pic6:hover {
+    background: linear-gradient(#0e1e3d, transparent),
+                url("../img/showing_plan.jpeg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+  }
+
+  /*copyright styling*/
+  #copyright{
+  margin-top: 10%;
+  }
+
+  /*mobile font styling*/
+
+  .topBlurb{
+    font-size: 20px;
+    letter-spacing: .5px;
+  }
+
+  .cards p{
+    font-size: 18px;
+  }
+
+  .cards h3{
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  #copyright span{
+    font-size: 16px;
+  }
+
+  /*clear float*/
+  .pictureTable::after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+
 }
